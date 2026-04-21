@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router'; // 1. Add this import
+import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { Navbar } from './navbar/navbar';
+import { Homepage } from './homepage/homepage';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterModule], // 2. Add RouterModule here
+  imports: [RouterOutlet, Homepage, Navbar],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.scss'
 })
-export class AppComponent {
-  title = 'my-app';
+export class App {
+  protected readonly title = signal('host-app');
 }

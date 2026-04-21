@@ -1,7 +1,14 @@
 import { loadRemoteModule } from '@angular-architects/native-federation';
 import { Routes } from '@angular/router';
+import { Homepage } from './homepage/homepage';
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  
+  // Navigation routes
+  { path: 'homepage', component: Homepage, title: 'NeuroConnect' },
+
+  
   {
     path: 'glucose',
     loadComponent: () => 
@@ -19,8 +26,9 @@ export const routes: Routes = [
   },
   {
     path: 'mood',
-    loadComponent: () => 
-      loadRemoteModule('mood', './Component').then(m => m.AppComponent)
+    loadComponent: () =>
+      loadRemoteModule('mood', './WeeklyTrend')
+        .then(m => m.WeeklyTrend),
   },
   {
     path: 'heart-rate',
