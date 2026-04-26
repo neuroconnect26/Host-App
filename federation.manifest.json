@@ -1,0 +1,7 @@
+{
+  "mfe1": "https://krobinson03.github.io/sleep-tracker/remoteEntry.json",
+  "glucose": "http://localhost:4202/remoteEntry.json",
+  "cholesterol": "http://localhost:4203/remoteEntry.json",
+  "mood": "http://localhost:4204/remoteEntry.json",
+  "heartRate": "http://localhost:4205/remoteEntry.json"
+}

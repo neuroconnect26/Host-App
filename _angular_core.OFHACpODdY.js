@@ -1,5 +1,5 @@
-import { a as bc, b as nt, f as Ac } from "@nf-internal/chunk-5TSPXXRX";
-import { B as _c, E as Sc, F as ih, G as sh, H as Rc, I as ah, J as ch, K as lh, L as vM, a as ae, b as R, c as bi, f as wc, g as Ai, n as qo, p as Ri, r as ki, s as Ot, w as Oi, x as oh, y as rh } from "@nf-internal/chunk-DI2ARBKW";
+import { a as bc, b as nt, f as Ac } from "@nf-internal/chunk-P2OSO4XP";
+import { B as _c, E as Sc, F as ih, G as sh, H as Rc, I as ah, J as ch, K as lh, L as vM, a as ae, b as R, c as bi, f as wc, g as Ai, n as qo, p as Ri, r as ki, s as Ot, w as Oi, x as oh, y as rh } from "@nf-internal/chunk-RFPVFFLR";
 import { a as z, b as we, d as ze } from "@nf-internal/chunk-4CLCTAJ7";
 import { BehaviorSubject as EM, Observable as IM, Subject as DM, Subscription as TM } from "rxjs";
 import { setActiveConsumer as Ln } from "@angular/core/primitives/signals";
@@ -10,7 +10,7 @@ var Pi = class {
     minor;
     patch;
     constructor(t) { this.full = t; let n = t.split("."); this.major = n[0], this.minor = n[1], this.patch = n.slice(2).join("."); }
-}, MM = new Pi("21.2.9");
+}, MM = new Pi("21.2.8");
 var Hi = "https://angular.dev/best-practices/security#preventing-cross-site-scripting-xss", D = class extends Error {
     code;
     constructor(t, n) { super(Ko(t, n)), this.code = t; }
@@ -1284,7 +1284,7 @@ var No = (() => { class e {
             }
             catch (o) {
                 console.warn("Exception in onSerialize callback: ", o);
-            } return JSON.stringify(this.store).replace(/</g, "\\u003C").replace(/\//g, "\\u002F"); }
+            } return JSON.stringify(this.store).replace(/</g, "\\u003C"); }
 } return e; })();
 function zm(e, t) { let n = e.getElementById(t + "-state"); if (n?.textContent)
     try {
@@ -3501,7 +3501,7 @@ var Yt = class extends za {
         V(O.DynamicComponentEnd), cs();
     } return new Ks(this.componentType, f, !!d); }
 };
-function lA(e, t, n, o) { let r = e ? ["ng-version", "21.2.9"] : B_(t.selectors[0]), i = null, s = null, a = 0; if (n)
+function lA(e, t, n, o) { let r = e ? ["ng-version", "21.2.8"] : B_(t.selectors[0]), i = null, s = null, a = 0; if (n)
     for (let u of n)
         a += u[Ct].requiredVars, u.create && (u.targetIdx = 0, (i ??= []).push(u)), u.update && (u.targetIdx = 0, (s ??= []).push(u)); if (o)
     for (let u = 0; u < o.length; u++) {
@@ -6950,7 +6950,7 @@ export { Iw as ANIMATION_MODULE_TYPE, vi as APP_BOOTSTRAP_LISTENER, _t as APP_ID
 @angular/core/fesm2022/primitives-event-dispatch.mjs:
 @angular/core/fesm2022/core.mjs:
   (**
-   * @license Angular v21.2.9
+   * @license Angular v21.2.8
    * (c) 2010-2026 Google LLC. https://angular.dev/
    * License: MIT
    *)

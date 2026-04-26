@@ -1,65 +1,65 @@
 {
-  "name": "host-app",
+  "name": "my-host",
   "shared": [
     {
       "packageName": "@angular/common",
-      "outFileName": "_angular_common.WI3whvf_y3.js",
-      "requiredVersion": "^21.1.0",
+      "outFileName": "_angular_common.k8xrBj2xMw.js",
+      "requiredVersion": "21.2.8",
       "singleton": true,
       "strictVersion": true,
-      "version": "21.2.9"
+      "version": "21.2.8"
     },
     {
       "packageName": "@angular/common/http",
-      "outFileName": "_angular_common_http.0cxq0E5r2z.js",
-      "requiredVersion": "^21.1.0",
+      "outFileName": "_angular_common_http.77mWQaUxVZ.js",
+      "requiredVersion": "21.2.8",
       "singleton": true,
       "strictVersion": true,
-      "version": "21.2.9"
+      "version": "21.2.8"
     },
     {
       "packageName": "@angular/core",
-      "outFileName": "_angular_core.K1vjKo9NPj.js",
-      "requiredVersion": "^21.1.0",
+      "outFileName": "_angular_core.OFHACpODdY.js",
+      "requiredVersion": "21.2.8",
       "singleton": true,
       "strictVersion": true,
-      "version": "21.2.9"
+      "version": "21.2.8"
     },
     {
       "packageName": "@angular/core/primitives/di",
-      "outFileName": "_angular_core_primitives_di.PYEHAAVjjR.js",
-      "requiredVersion": "^21.1.0",
+      "outFileName": "_angular_core_primitives_di.slBGhtZQEB.js",
+      "requiredVersion": "21.2.8",
       "singleton": true,
       "strictVersion": true,
-      "version": "21.2.9"
+      "version": "21.2.8"
     },
     {
       "packageName": "@angular/core/primitives/signals",
-      "outFileName": "_angular_core_primitives_signals.OsFw1Xy9Vd.js",
-      "requiredVersion": "^21.1.0",
+      "outFileName": "_angular_core_primitives_signals.YqBn5lwtP8.js",
+      "requiredVersion": "21.2.8",
       "singleton": true,
       "strictVersion": true,
-      "version": "21.2.9"
+      "version": "21.2.8"
     },
     {
       "packageName": "@angular/platform-browser",
-      "outFileName": "_angular_platform_browser.hULT-Uootb.js",
-      "requiredVersion": "^21.1.0",
+      "outFileName": "_angular_platform_browser.0LGII3ff5v.js",
+      "requiredVersion": "21.2.8",
       "singleton": true,
       "strictVersion": true,
-      "version": "21.2.9"
+      "version": "21.2.8"
     },
     {
       "packageName": "@angular/router",
-      "outFileName": "_angular_router.v0rtY-rhQE.js",
-      "requiredVersion": "^21.1.0",
+      "outFileName": "_angular_router.v7sczlvBNC.js",
+      "requiredVersion": "21.2.8",
       "singleton": true,
       "strictVersion": true,
-      "version": "21.2.9"
+      "version": "21.2.8"
     },
     {
       "packageName": "rxjs",
-      "outFileName": "rxjs.rG7pgBGbL-.js",
+      "outFileName": "rxjs.vE8Uzmig3b.js",
       "requiredVersion": "~7.8.0",
       "singleton": true,
       "strictVersion": true,
@@ -67,7 +67,7 @@
     },
     {
       "packageName": "rxjs/operators",
-      "outFileName": "rxjs_operators.3iv4gSDcY5.js",
+      "outFileName": "rxjs_operators.RXvMVtRclg.js",
       "requiredVersion": "~7.8.0",
       "singleton": true,
       "strictVersion": true,
@@ -75,7 +75,7 @@
     },
     {
       "packageName": "tslib",
-      "outFileName": "tslib.LH7U-UiesX.js",
+      "outFileName": "tslib.qGuC0BZWNX.js",
       "requiredVersion": "^2.3.0",
       "singleton": true,
       "strictVersion": true,
@@ -86,24 +86,24 @@
       "strictVersion": false,
       "version": "0.0.0",
       "requiredVersion": "0.0.0",
-      "packageName": "@nf-internal/chunk-BBNAOKFW",
-      "outFileName": "chunk-BBNAOKFW.js"
+      "packageName": "@nf-internal/chunk-DOT4ATRE",
+      "outFileName": "chunk-DOT4ATRE.js"
     },
     {
       "singleton": false,
       "strictVersion": false,
       "version": "0.0.0",
       "requiredVersion": "0.0.0",
-      "packageName": "@nf-internal/chunk-5TSPXXRX",
-      "outFileName": "chunk-5TSPXXRX.js"
+      "packageName": "@nf-internal/chunk-P2OSO4XP",
+      "outFileName": "chunk-P2OSO4XP.js"
     },
     {
       "singleton": false,
       "strictVersion": false,
       "version": "0.0.0",
       "requiredVersion": "0.0.0",
-      "packageName": "@nf-internal/chunk-DI2ARBKW",
-      "outFileName": "chunk-DI2ARBKW.js"
+      "packageName": "@nf-internal/chunk-RFPVFFLR",
+      "outFileName": "chunk-RFPVFFLR.js"
     },
     {
       "singleton": false,
