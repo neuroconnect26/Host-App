@@ -1,1 +1,0 @@
-import{a as o}from"./chunk-AWOANDKJ.js";var t="https://krobinson03.github.io/sleep-tracker/remoteEntry.json",r={mfe1:t};o(r).catch(e=>console.error(e)).then(e=>import("./chunk-GYKX6GV2.js")).catch(e=>console.error(e));

@@ -1,7 +1,0 @@
-{
-  "remote-app01-noSSR-05042026": "http://localhost:4201/remoteEntry.json",
-  "glucose": "https://sakheem.github.io/glucose-app/remoteEntry.json",
-  "cholesterol": "https://mogada7281.github.io/cholesterol/remoteEntry.json",
-  "mood": "https://stacey-gao.github.io/moodapp/remoteEntry.json",
-  "heartRate": "https://sabairfan14.github.io/my-app/remoteEntry.json"
-}
