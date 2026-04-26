@@ -1,5 +1,5 @@
 {
-  "sleep": "https://krobinson03.github.io/sleep-tracker/remoteEntry.json",
+  "sleep": "http://localhost:4201/remoteEntry.json",
   "glucose": "http://localhost:4202/remoteEntry.json",
   "cholesterol": "http://localhost:4203/remoteEntry.json",
   "mood": "http://localhost:4204/remoteEntry.json",
