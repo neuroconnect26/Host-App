@@ -1,7 +1,7 @@
 {
-  "sleep": "http://localhost:4201/remoteEntry.json",
-  "glucose": "http://localhost:4202/remoteEntry.json",
-  "cholesterol": "http://localhost:4203/remoteEntry.json",
-  "mood": "http://localhost:4204/remoteEntry.json",
-  "heartRate": "http://localhost:4205/remoteEntry.json"
+  "sleep": "https://krobinson03.github.io/sleep-tracker/remoteEntry.json",
+  "glucose": "https://sakheem.github.io/glucose-app/remoteEntry.json",
+  "cholesterol": "https://mogada7281.github.io/cholesterol/remoteEntry.json",
+  "mood": "https://stacey-gao.github.io/moodapp/remoteEntry.json",
+  "heartRate": "https://sabairfan14.github.io/Heart-Rate-App/remoteEntry.json"
 }
