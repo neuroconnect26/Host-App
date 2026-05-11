@@ -3,71 +3,71 @@
   "shared": [
     {
       "packageName": "@angular/common",
-      "outFileName": "_angular_common.jPXVPtjFX4.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_common.zVtEUHQ2t3.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "@angular/common/http",
-      "outFileName": "_angular_common_http.f3lW3bIY9l.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_common_http.GJHQfSXTEm.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "@angular/core",
-      "outFileName": "_angular_core.AKMq2t1x5x.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_core.iKuVBrXv_2.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "@angular/core/primitives/di",
-      "outFileName": "_angular_core_primitives_di.xUP7gCkfzo.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_core_primitives_di.8q5SaxlhzJ.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "@angular/core/primitives/signals",
-      "outFileName": "_angular_core_primitives_signals.06kgq8nh3J.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_core_primitives_signals.wIJRVIduEf.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "@angular/forms",
-      "outFileName": "_angular_forms.ZFzq2BU9ik.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_forms.bLNFcoulO_.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "@angular/platform-browser",
-      "outFileName": "_angular_platform_browser.tXgri0G8Dg.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_platform_browser.Mfvs-Ubw2J.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "@angular/router",
-      "outFileName": "_angular_router.kS3vX-n3zN.js",
-      "requiredVersion": "21.2.8",
+      "outFileName": "_angular_router.REIfanJFtH.js",
+      "requiredVersion": "21.2.12",
       "singleton": true,
       "strictVersion": false,
-      "version": "21.2.8"
+      "version": "21.2.12"
     },
     {
       "packageName": "rxjs",
-      "outFileName": "rxjs.Gh_8tzqtE-.js",
+      "outFileName": "rxjs.gc94VZ7zVL.js",
       "requiredVersion": "~7.8.0",
       "singleton": true,
       "strictVersion": false,
@@ -75,7 +75,7 @@
     },
     {
       "packageName": "rxjs/operators",
-      "outFileName": "rxjs_operators.Z02BZlmEx-.js",
+      "outFileName": "rxjs_operators.h63qeKLCHK.js",
       "requiredVersion": "~7.8.0",
       "singleton": true,
       "strictVersion": false,
@@ -83,7 +83,7 @@
     },
     {
       "packageName": "tslib",
-      "outFileName": "tslib.EbyLasUuyp.js",
+      "outFileName": "tslib.juYVXXPi2t.js",
       "requiredVersion": "^2.3.0",
       "singleton": true,
       "strictVersion": false,
@@ -102,24 +102,24 @@
       "strictVersion": false,
       "version": "0.0.0",
       "requiredVersion": "0.0.0",
-      "packageName": "@nf-internal/chunk-DOT4ATRE",
-      "outFileName": "chunk-DOT4ATRE.js"
+      "packageName": "@nf-internal/chunk-XLQPIWP7",
+      "outFileName": "chunk-XLQPIWP7.js"
     },
     {
       "singleton": false,
       "strictVersion": false,
       "version": "0.0.0",
       "requiredVersion": "0.0.0",
-      "packageName": "@nf-internal/chunk-P2OSO4XP",
-      "outFileName": "chunk-P2OSO4XP.js"
+      "packageName": "@nf-internal/chunk-IGYUEDIQ",
+      "outFileName": "chunk-IGYUEDIQ.js"
     },
     {
       "singleton": false,
       "strictVersion": false,
       "version": "0.0.0",
       "requiredVersion": "0.0.0",
-      "packageName": "@nf-internal/chunk-RFPVFFLR",
-      "outFileName": "chunk-RFPVFFLR.js"
+      "packageName": "@nf-internal/chunk-4RZLOFAI",
+      "outFileName": "chunk-4RZLOFAI.js"
     },
     {
       "singleton": false,
