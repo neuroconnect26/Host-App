@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:gh-pages": "ng build --configuration production --base-href /Host-App/ && npm run gh-pages:spa-fallback",
-"gh-pages:spa-fallback": "node -e \"const fs=require('fs'); fs.copyFileSync('dist/host-app/browser/index.html','dist/host-app/browser/404.html');\"",
+    "gh-pages:spa-fallback": "node -e \"const fs=require('fs'); fs.copyFileSync('dist/host-app/browser/index.html','dist/host-app/browser/404.html');\"",
     "deploy:gh-pages": "npm run build:gh-pages && npx angular-cli-ghpages --dir=dist/host-app/browser --repo=https://github.com/neuroconnect26/Host-App.git",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -44,9 +44,9 @@
   },
   "devDependencies": {
     "@angular-architects/native-federation": "^21.2.3",
-    "@angular-devkit/build-angular": "21.2.8",
-    "@angular/build": "21.2.8",
-    "@angular/cli": "21.2.8",
+    "@angular-devkit/build-angular": "21.2.10",
+    "@angular/build": "21.2.10",
+    "@angular/cli": "21.2.10",
     "@angular/compiler-cli": "21.2.8",
     "@oxc-parser/binding-win32-x64-msvc": "^0.127.0",
     "jsdom": "^27.1.0",
