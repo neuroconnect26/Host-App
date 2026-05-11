@@ -108,6 +108,14 @@ export const routes: Routes = [
       }, m => m.Weeklytrend)
   },
   {
+  path: 'heart-rate-card',
+  loadComponent: () =>
+    loadRemoteComponent({
+      remoteName: 'heartRate',
+      exposedModule: './Card',
+      }, m => m.HeartRateCard)
+  },
+  {
     path: 'heart-rate',
     loadComponent: () =>
       loadRemoteComponent({
