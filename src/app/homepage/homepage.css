@@ -1,0 +1,333 @@
+.homepage {
+  padding: 2rem;
+  max-width: 1100px;
+}
+
+.greeting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.greeting {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+}
+
+.subtitle {
+  color: #64748b;
+  margin: 0;
+}
+
+.edit-btn {
+  background: #1e293b;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.edit-btn:hover {
+  background: #334155;
+}
+
+.profile-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.profile-card h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.profile-note {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin: 0 0 1.25rem 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #1e293b;
+}
+
+.input-unit-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-unit-row input {
+  flex: 1;
+}
+
+.input-unit-row select {
+  width: 70px;
+}
+
+.save-btn {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.save-btn:hover {
+  background: #15803d;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.module-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.module-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.module-card.cholesterol-card {
+  grid-column: span 2;
+}
+
+.sleep-analysis-preview {
+  max-height: 260px;
+  overflow: hidden;
+}
+
+.sleep-analysis-preview ::ng-deep .page {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sleep-analysis-preview ::ng-deep .page-header,
+.sleep-analysis-preview ::ng-deep .definitions-card,
+.sleep-analysis-preview ::ng-deep .notes,
+.sleep-analysis-preview ::ng-deep .delete,
+.sleep-analysis-preview ::ng-deep .stages-legend {
+  display: none !important;
+}
+
+.sleep-analysis-preview ::ng-deep .list article:not(:first-child) {
+  display: none;
+}
+
+.sleep-analysis-preview ::ng-deep .pie-chart {
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+}
+
+.card-header {
+  padding: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.sleep {
+  background: #6b9bd1;
+}
+
+.glucose {
+  background: #e05c5c;
+}
+
+.cholesterol {
+  background: #e0a85c;
+}
+
+.mood {
+  background: #9b6bd1;
+}
+
+.heart-rate {
+  background: #e0607a;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.module-card.cholesterol-card .card-body {
+  padding: 1rem;
+  background: linear-gradient(180deg, #fffbf5 0%, #ffffff 100%);
+}
+
+.cholesterol-preview {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cholesterol-main {
+  border: 1px solid #f1e4d2;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.85rem 0.95rem;
+}
+
+.metric-label {
+  margin: 0;
+  color: #8a6a3f;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.metric-value {
+  margin: 0.2rem 0 0;
+  color: #1e293b;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.metric-value span {
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.metric-date {
+  margin: 0.25rem 0 0;
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.cholesterol-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.mini-metric {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  padding: 0.6rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.mini-label {
+  color: #64748b;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.mini-metric strong {
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.mini-status {
+  justify-self: start;
+  border-radius: 999px;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.mini-status.good {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.mini-status.bad {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (max-width: 900px) {
+  .module-card.cholesterol-card {
+    grid-column: span 1;
+  }
+
+  .cholesterol-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.coming-soon,
+.loading {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.coming-soon {
+  color: #94a3b8;
+}
+
+.loading {
+  color: #64748b;
+}
+
+.unavailable {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.retry-btn {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #334155;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.retry-btn:hover {
+  background: #f8fafc;
+}

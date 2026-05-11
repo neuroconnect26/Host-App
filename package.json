@@ -1,0 +1,56 @@
+{
+  "name": "host-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build:gh-pages": "ng build --configuration production --base-href /Host-App/ && npm run gh-pages:spa-fallback",
+"gh-pages:spa-fallback": "node -e \"const fs=require('fs'); fs.copyFileSync('dist/host-app/browser/index.html','dist/host-app/browser/404.html');\"",
+    "deploy:gh-pages": "npm run build:gh-pages && npx angular-cli-ghpages --dir=dist/host-app/browser --repo=https://github.com/neuroconnect26/Host-App.git",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "npm@11.12.1",
+  "dependencies": {
+    "@angular/animations": "21.2.8",
+    "@angular/common": "21.2.8",
+    "@angular/compiler": "21.2.8",
+    "@angular/core": "21.2.8",
+    "@angular/forms": "21.2.8",
+    "@angular/platform-browser": "21.2.8",
+    "@angular/router": "21.2.8",
+    "@softarc/native-federation-node": "^3.3.4",
+    "add": "^2.0.6",
+    "angular-cli-ghpages": "^3.0.2",
+    "es-module-shims": "^1.5.12",
+    "ng": "^0.0.0",
+    "or": "^0.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular-architects/native-federation": "^21.2.3",
+    "@angular-devkit/build-angular": "21.2.8",
+    "@angular/build": "21.2.8",
+    "@angular/cli": "21.2.8",
+    "@angular/compiler-cli": "21.2.8",
+    "@oxc-parser/binding-win32-x64-msvc": "^0.127.0",
+    "jsdom": "^27.1.0",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
+  }
+}

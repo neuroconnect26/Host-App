@@ -1,0 +1,171 @@
+<div class="homepage">
+  <div class="greeting-row">
+    <div>
+      <h1 class="greeting">{{ greeting }}</h1>
+      <p class="subtitle">Here is your health at a glance.</p>
+    </div>
+    <button class="edit-btn" type="button" (click)="editingProfile = !editingProfile">
+      {{ editingProfile ? 'Cancel' : 'Edit Profile' }}
+    </button>
+  </div>
+
+  <div class="profile-card" *ngIf="editingProfile">
+    <h2>Your Profile</h2>
+    <p class="profile-note">
+      This info is shared with all modules automatically, so users do not need to re-enter it.
+    </p>
+
+    <div class="form-grid">
+      <label>
+        Name
+        <input [(ngModel)]="user.name" placeholder="Your name" />
+      </label>
+      <label>
+        Age
+        <input [(ngModel)]="user.age" type="number" placeholder="Years" />
+      </label>
+      <label>
+        Weight
+        <div class="input-unit-row">
+          <input [(ngModel)]="user.weight" type="number" placeholder="Amount" />
+          <select [(ngModel)]="user.weightUnit">
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+          </select>
+        </div>
+      </label>
+      <label>
+        Height
+        <div class="input-unit-row">
+          <input [(ngModel)]="user.height" type="number" placeholder="Amount" />
+          <select [(ngModel)]="user.heightUnit">
+            <option value="ft">ft</option>
+            <option value="cm">cm</option>
+          </select>
+        </div>
+      </label>
+    </div>
+
+    <button class="save-btn" type="button" (click)="saveProfile()">
+      {{ saved ? 'Saved' : 'Save Profile' }}
+    </button>
+  </div>
+
+  <div class="cards-grid">
+    <div class="module-card sleep-card" [routerLink]="['/sleep']">
+      <div class="card-header sleep">
+        <h3>Sleep</h3>
+      </div>
+      <div class="card-body">
+        <div class="sleep-analysis-preview" *ngIf="cardStatus.sleep === 'ready' && sleepCard">
+          <ng-container [ngComponentOutlet]="sleepCard" />
+        </div>
+        <p class="loading" *ngIf="cardStatus.sleep === 'loading'">Loading card...</p>
+        <div class="unavailable" *ngIf="cardStatus.sleep === 'error'">
+          <p class="coming-soon">{{ cardError.sleep }}</p>
+          <button type="button" class="retry-btn" (click)="retryCard('sleep', $event)">Retry</button>
+        </div>
+        <ng-template #sleepFallback>
+          <p class="coming-soon">Open Sleep to view your data.</p>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="module-card" [routerLink]="['/glucose']">
+      <div class="card-header glucose">
+        <h3>Glucose</h3>
+      </div>
+      <div class="card-body">
+        <ng-container *ngIf="cardStatus.glucose === 'ready' && glucoseCard" [ngComponentOutlet]="glucoseCard" />
+        <p class="loading" *ngIf="cardStatus.glucose === 'loading'">Loading card...</p>
+        <div class="unavailable" *ngIf="cardStatus.glucose === 'error'">
+          <p class="coming-soon">{{ cardError.glucose }}</p>
+          <button type="button" class="retry-btn" (click)="retryCard('glucose', $event)">Retry</button>
+        </div>
+        <ng-template #glucoseFallback>
+          <p class="coming-soon">Open Glucose to view your data.</p>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="module-card cholesterol-card" [routerLink]="['/cholesterol']">
+      <div class="card-header cholesterol">
+        <h3>Cholesterol</h3>
+      </div>
+      <div class="card-body">
+        <p class="loading" *ngIf="cardStatus.cholesterol === 'loading'">Loading card...</p>
+        <div class="cholesterol-preview" *ngIf="cardStatus.cholesterol === 'ready'">
+          <div class="cholesterol-main">
+            <p class="metric-label">Latest Total</p>
+            <p class="metric-value">{{ latestCholesterol?.total ?? '-' }} <span>mg/dL</span></p>
+            <p class="metric-date">{{ formatCardDate(latestCholesterol?.date) }}</p>
+          </div>
+          <div class="cholesterol-grid">
+            <div class="mini-metric">
+              <span class="mini-label">LDL</span>
+              <strong>{{ latestCholesterol?.ldl ?? '-' }}</strong>
+              <span class="mini-status" [class.good]="cholesterolStatus('ldl') === 'Good'" [class.bad]="cholesterolStatus('ldl') === 'Bad'">
+                {{ cholesterolStatus('ldl') }}
+              </span>
+            </div>
+            <div class="mini-metric">
+              <span class="mini-label">HDL</span>
+              <strong>{{ latestCholesterol?.hdl ?? '-' }}</strong>
+              <span class="mini-status" [class.good]="cholesterolStatus('hdl') === 'Good'" [class.bad]="cholesterolStatus('hdl') === 'Bad'">
+                {{ cholesterolStatus('hdl') }}
+              </span>
+            </div>
+            <div class="mini-metric">
+              <span class="mini-label">Triglycerides</span>
+              <strong>{{ latestCholesterol?.triglycerides ?? '-' }}</strong>
+              <span class="mini-status" [class.good]="cholesterolStatus('triglycerides') === 'Good'" [class.bad]="cholesterolStatus('triglycerides') === 'Bad'">
+                {{ cholesterolStatus('triglycerides') }}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="unavailable" *ngIf="cardStatus.cholesterol === 'error'">
+          <p class="coming-soon">{{ cardError.cholesterol }}</p>
+          <button type="button" class="retry-btn" (click)="retryCard('cholesterol', $event)">Retry</button>
+        </div>
+        <ng-template #cholesterolFallback>
+          <p class="coming-soon">Open Cholesterol to view your data.</p>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="module-card" [routerLink]="['/mood']">
+      <div class="card-header mood">
+        <h3>Mood</h3>
+      </div>
+      <div class="card-body">
+        <ng-container *ngIf="cardStatus.mood === 'ready' && moodCard" [ngComponentOutlet]="moodCard" />
+        <p class="loading" *ngIf="cardStatus.mood === 'loading'">Loading card...</p>
+        <div class="unavailable" *ngIf="cardStatus.mood === 'error'">
+          <p class="coming-soon">{{ cardError.mood }}</p>
+          <button type="button" class="retry-btn" (click)="retryCard('mood', $event)">Retry</button>
+        </div>
+        <ng-template #moodFallback>
+          <p class="coming-soon">Open Mood to view your data.</p>
+        </ng-template>
+      </div>
+    </div>
+
+    <div class="module-card" [routerLink]="['/heart-rate']">
+      <div class="card-header heart-rate">
+        <h3>Heart Rate</h3>
+      </div>
+      <div class="card-body">
+        <ng-container *ngIf="cardStatus.heartRate === 'ready' && heartRateCard" [ngComponentOutlet]="heartRateCard" />
+        <p class="loading" *ngIf="cardStatus.heartRate === 'loading'">Loading card...</p>
+        <div class="unavailable" *ngIf="cardStatus.heartRate === 'error'">
+          <p class="coming-soon">{{ cardError.heartRate }}</p>
+          <button type="button" class="retry-btn" (click)="retryCard('heartRate', $event)">Retry</button>
+        </div>
+        <ng-template #heartRateFallback>
+          <p class="coming-soon">Open Heart Rate to view your data.</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
