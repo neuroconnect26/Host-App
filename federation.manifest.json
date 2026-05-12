@@ -1,6 +1,6 @@
 {
   "sleep": "https://krobinson03.github.io/sleep-tracker/remoteEntry.json",
-  "glucose": "https://sakheem.github.io/glucose-app/remoteEntry.json",
+  "glucose": "https://sakheem.github.io/glucose-remote/remoteEntry.json",
   "cholesterol": "https://mogada7281.github.io/cholesterol/remoteEntry.json",
   "mood": "https://stacey-gao.github.io/moodapp/remoteEntry.json",
   "heartRate": "https://sabairfan14.github.io/Heart-Rate-App/remoteEntry.json"
