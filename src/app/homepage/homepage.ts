@@ -86,7 +86,7 @@ export class Homepage implements OnInit, OnDestroy {
 
   async loadCards(): Promise<void> {
     this.refreshCholesterolData();
-    await Promise.all([
+     Promise.all([
       this.loadSleepCard(),
       this.loadGlucoseCard(),
       this.loadCholesterolCard(),
