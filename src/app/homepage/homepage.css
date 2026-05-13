@@ -110,7 +110,7 @@
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
 }
 
@@ -121,15 +121,12 @@
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
+  grid-column: span 2;
 }
 
 .module-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.module-card.cholesterol-card {
-  grid-column: span 2;
 }
 
 .sleep-analysis-preview {
@@ -288,7 +285,11 @@
 }
 
 @media (max-width: 900px) {
-  .module-card.cholesterol-card {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-card {
     grid-column: span 1;
   }
 

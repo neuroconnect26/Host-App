@@ -113,7 +113,7 @@ export const routes: Routes = [
     loadRemoteComponent({
       remoteName: 'heartRate',
       exposedModule: './Card',
-      }, m => m.HeartRateCard)
+      }, m => m.heartRateCard)
   },
   {
     path: 'heart-rate',

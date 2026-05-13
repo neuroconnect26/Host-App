@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
+  standalone: true,
   selector: 'app-navbar',
   imports: [RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './navbar.html',

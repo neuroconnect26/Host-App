@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { Navbar } from './navbar/navbar';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   imports: [Navbar],
   templateUrl: './app.html',

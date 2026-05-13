@@ -4,7 +4,7 @@ module.exports = withNativeFederation({
   name: 'host-app',
 
   remotes: {
-    glucose: 'https://sakheem.github.io/glucose-remote/remoteEntry.json',
+    glucose: 'https://sakheem.github.io/glucose-app/remoteEntry.json',
     cholesterol: 'https://mogada7281.github.io/cholesterol/remoteEntry.json',
     mood: 'https://stacey-gao.github.io/moodapp/remoteEntry.json',
     sleep: 'https://krobinson03.github.io/sleep-tracker/remoteEntry.json',

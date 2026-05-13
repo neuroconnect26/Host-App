@@ -8,7 +8,7 @@ import { routes } from './app.routes';
 function preloadHomepageRemotes(): Promise<void> {
   return Promise.all([
     loadRemoteModule({ remoteName: 'sleep', exposedModule: './Analysis' }).catch(() => undefined),
-    loadRemoteModule({ remoteName: 'glucose', exposedModule: './Card' }).catch(() => undefined),
+    loadRemoteModule({ remoteName: 'glucose', exposedModule: './Component' }).catch(() => undefined),
     loadRemoteModule({ remoteName: 'mood', exposedModule: './Card' }).catch(() => undefined),
     loadRemoteModule({ remoteName: 'heartRate', exposedModule: './Card' }).catch(() => undefined),
   ]).then(() => undefined);

@@ -10,6 +10,7 @@ const CARD_TIMEOUT_MS = 6500;
 const CARD_RETRY_DELAY_MS = 450;
 
 @Component({
+  standalone: true,
   selector: 'app-homepage',
   imports: [CommonModule, FormsModule, RouterLink, NgComponentOutlet],
   templateUrl: './homepage.html',
@@ -137,8 +138,8 @@ export class Homepage implements OnInit, OnDestroy {
       const card = await this.loadCardWithTimeout(
         loadRemoteModule({
           remoteName: 'glucose',
-          exposedModule: './Card',
-        }).then((m: { GlucoseCard: Type<unknown> }) => m.GlucoseCard),
+          exposedModule: './Component',
+        }).then((m: { GlucoseDashboard: Type<unknown> }) => m.GlucoseDashboard),
       );
       if (this.destroyed) return;
       this.glucoseCard = card;
@@ -250,7 +251,7 @@ export class Homepage implements OnInit, OnDestroy {
         loadRemoteModule({
           remoteName: 'heartRate',
           exposedModule: './Card',
-        }).then((m: { HeartRateCard: Type<unknown> }) => m.HeartRateCard),
+        }).then((m: { heartRateCard: Type<unknown> }) => m.heartRateCard),
       );
       if (this.destroyed) return;
       this.heartRateCard = card;
