@@ -64,7 +64,7 @@ export class Homepage implements OnInit, OnDestroy {
     this.sleepCard = undefined;
     this.glucoseCard = undefined;
     this.moodCard = undefined;
-    //this.heartRateCard = undefined;
+    this.heartRateCard = undefined;
   }
 
   getGreeting(): string {
